@@ -66,19 +66,21 @@ This project bridges the gap between academic Computer Vision research and acces
 
 ## Architecture
 
-The system utilizes a hybrid workflow to overcome local hardware limitations, offloading heavy compute (training) to cloud GPUs while maintaining a responsive local viewer.
+The system utilizes a hybrid workflow to overcome local hardware limitations. Heavy computational tasks (Training) are offloaded to Cloud GPUs, while the interaction (Viewer) runs locally in the browser.
 
 ```mermaid
-graph TD
-    subgraph Cloud [Cloud Infrastructure - Kaggle]
-    A[Input Video] -->|SfM & Training| B[Gaussian Splatting Model]
-    B -->|Export| C[.splat / .ply Asset]
+graph LR
+    subgraph Cloud [Cloud (Kaggle/Colab)]
+    A[Input Video] -->|COLMAP| B(Sparse Point Cloud)
+    B -->|PyTorch Optimization| C{Gaussian Training}
+    C -->|Adaptive Density Control| C
+    C -->|Export| D[.splat Binary]
     end
 
-    subgraph Local [Client-Side - React]
-    C -->|Download & Embed| D[public/models folder]
-    D -->|Load| E[SplatLoader]
-    E -->|Render| F[React Three Fiber Canvas]
+    subgraph Client [Local Browser]
+    D -->|Download| E[React App]
+    E -->|SplatLoader| F[Three.js Scene]
+    F -->|WebGL Rasterizer| G[Interactive 3D View]
     end
 ```
 
