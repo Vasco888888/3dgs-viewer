@@ -70,7 +70,7 @@ The system utilizes a hybrid workflow to overcome local hardware limitations, of
 
 ```mermaid
 graph TD
-    subgraph Cloud [Cloud Infrastructure - Kaggle/Colab]
+    subgraph Cloud [Cloud Infrastructure - Kaggle]
     A[Input Video] -->|SfM & Training| B[Gaussian Splatting Model]
     B -->|Export| C[.splat / .ply Asset]
     end
