@@ -10,7 +10,7 @@ export default function Viewer() {
         {/* Controls to rotate around */}
         <OrbitControls />
 
-        <Splat src="kitchen-7k.splat" />
+        <Splat src="scene.splat" />
 
       </Canvas>
     </div>
