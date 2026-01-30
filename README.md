@@ -23,7 +23,7 @@ This project demonstrates an end-to-end pipeline for **Neural Rendering**:
 ## Project Report
 For a detailed technical analysis, including the mathematical background of Gaussian Splatting, training metrics, and a deeper discussion of the artifacts, please refer to the full report:
 
-**[Project Report (PDF)](./docs/report.pdf)**
+**[Project Report (PDF)](./docs/3dgsreport.pdf)**
 
 
 
