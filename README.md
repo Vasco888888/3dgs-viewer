@@ -1,6 +1,6 @@
 # 3D Gaussian Splatting Viewer
 
-[![Open in Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://raw.githubusercontent.com/Vasco888888/3dgs-viewer/main/notebooks/training.ipynb) 
+[![Open in Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://raw.githubusercontent.com/Vasco888888/3dgs-viewer/master/notebooks/training.ipynb) 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Three.js](https://img.shields.io/badge/Three.js-black?style=for-the-badge&logo=three.js&logoColor=white)
 ![Nerfstudio](https://img.shields.io/badge/Nerfstudio-Model-orange?style=for-the-badge)
