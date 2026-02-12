@@ -144,7 +144,7 @@ A successful training run for this scene typically achieves a **PSNR of 30+**. B
 <p align="center">
   <img src="./assets/metrics/psnr.png" alt="PSNR Graph" width="800" />
   <br>
-  <em>PSNR curve showing stable convergence at ~40.1 dB.</em>
+  <em>PSNR curve showing stable convergence at 40.16 dB.</em>
 </p>
 
 <p align="center">
