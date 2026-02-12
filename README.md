@@ -32,7 +32,7 @@ This project demonstrates an end-to-end pipeline for **Neural Rendering**:
 ## Project Report
 For a detailed technical analysis, including the mathematical background of Gaussian Splatting, training metrics, and a deeper discussion of the artifacts, please refer to the full report:
 
-**[Project Report (PDF)](./docs/3dgsreport.pdf)**
+**[Project Report (PDF)](./docs/Photorealistic%203D%20Scene%20Rendering%20using%20Gaussian%20Splatting.pdf)**
 
 
 
@@ -136,7 +136,7 @@ A successful training run for this scene typically achieves a **PSNR of 30+**. B
 
 | Metric | Value |
 | :--- | :--- |
-| **Max PSNR** | ~40.1 dB |
+| **Max PSNR** | 40.16 dB |
 | **Final Loss** | ~0.012 |
 | **Gaussian Count** | 328,542 |
 
@@ -168,7 +168,7 @@ A successful training run for this scene typically achieves a **PSNR of 30+**. B
 ├── assets/                 # Input video and demo for README
 │   └── metrics/            # Training metrics and visual parity results
 ├── docs/
-│   └── 3dgsreport.pdf          # Technical report and analysis
+│   └── Photorealistic 3D Scene Rendering using Gaussian Splatting.pdf          # Technical report and analysis
 ├── logs/
 │   └── config.yml              # Training configuration (hyperparameters, SH degree)
 ├── notebooks/
