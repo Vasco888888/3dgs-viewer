@@ -104,6 +104,42 @@ You can view the full training code in the `notebooks/` folder: [`training.ipynb
 
 ---
 
+## Viewing Training Metrics
+To verify the training quality, you can visualize the **Loss** and **PSNR** history using TensorBoard. Note that the large binary event files are excluded from this repository; you should use the ones generated during your own training run.
+
+1.  **Install TensorBoard locally:**
+    ```bash
+    pip install tensorboard
+    ```
+
+2.  **Run the dashboard:**
+    ```bash
+    tensorboard --logdir logs/
+    ```
+
+3.  **Open in Browser:**
+    Navigate to `http://localhost:6006` to view the training curves.
+
+---
+
+## Training Results
+A successful training run for this scene typically achieves a **PSNR of 30+**. Below are the metrics from the current `scene.splat` production:
+
+| Metric | Value |
+| :--- | :--- |
+| **Max PSNR** | ~40.1 dB |
+| **Final Loss** | ~0.012 |
+| **Gaussian Count** | 328,542 |
+
+### **Training Performance**
+![PSNR Graph](./assets/psnr.png)
+*PSNR curve showing stable convergence at ~40.1 dB.*
+
+![Loss Graph](./assets/loss.png)
+*Total Loss curve demonstrating successful model optimization.*
+
+---
+
 ## Challenges and Limitations
 * **Floaters (Artifacts):** The raw model exhibits high-frequency artifacts ("floaters"). This is due to a combination of factors in the input video:
     1.  **Low-Texture Surface:** The uniform grey carpet lacks distinct feature points for COLMAP to track.
@@ -118,17 +154,16 @@ You can view the full training code in the `notebooks/` folder: [`training.ipynb
 ├── docs/
 │   └── 3dgsreport.pdf          # Technical report and analysis
 ├── logs/
-│   └── traininglog.txt         # Nerfstudio training output log (15k iterations, profiling stats)
+│   └── config.yml              # Training configuration (hyperparameters, SH degree)
 ├── notebooks/
-│   └── training.ipynb      # The Python notebook used on Kaggle
+│   └── training.ipynb          # The Python notebook used on Kaggle
 ├── public/
-│   ├── config.yml          # Nerfstudio training config (hyperparameters, optimizer settings, SH degree)
-│   ├── scene.splat         # The final, cleaned 3D model
-│   └── index.html          # HTML entry point
+│   ├── scene.splat             # The final, cleaned 3D model
+│   └── index.html              # HTML entry point
 ├── src/
 │   ├── components/
-│   │   └── Viewer.js       # The R3F Canvas component
-│   ├── App.js              # Main entry point
-│   └── index.js            # React root
+│   │   └── Viewer.js           # The R3F Canvas component
+│   ├── App.js                  # Main entry point
+│   └── index.js                # React root
 ├── LICENSE                 # Project license
 └── README.md

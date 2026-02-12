@@ -1,2 +1,6 @@
 # Dependencies
 node_modules/
+
+# Logs and Large Binary Files
+logs/traininglog.txt
+logs/events.out.tfevents.*
