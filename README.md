@@ -141,11 +141,17 @@ A successful training run for this scene typically achieves a **PSNR of 30+**. B
 | **Gaussian Count** | 328,542 |
 
 ### **Training Performance**
-![PSNR Graph](./assets/metrics/psnr.png)
-*PSNR curve showing stable convergence at ~40.1 dB.*
+<p align="center">
+  <img src="./assets/metrics/psnr.png" alt="PSNR Graph" width="800" />
+  <br>
+  <em>PSNR curve showing stable convergence at ~40.1 dB.</em>
+</p>
 
-![Loss Graph](./assets/metrics/loss.png)
-*Total Loss curve demonstrating successful model optimization.*
+<p align="center">
+  <img src="./assets/metrics/loss.png" alt="Loss Graph" width="800" />
+  <br>
+  <em>Total Loss curve demonstrating successful model optimization.</em>
+</p>
 
 ---
 
