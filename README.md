@@ -11,6 +11,12 @@ A photorealistic 3D scene viewer built with **React Three Fiber**, powered by a 
 ## Demo
 ![Demo GIF](./assets/demo.gif)
 
+## Visual Parity
+The model achieves near-perfect visual reconstruction, making the AI-generated splats indistinguishable from the original video.
+
+![Visual Parity](./assets/visual_parity.png)
+*Left: Ground Truth (Original Video) | Right: AI Reconstruction (Step 14,900)*
+
 ## Overview
 This project demonstrates an end-to-end pipeline for **Neural Rendering**:
 
