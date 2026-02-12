@@ -14,7 +14,7 @@ A photorealistic 3D scene viewer built with **React Three Fiber**, powered by a 
 ## Visual Parity
 The model achieves near-perfect visual reconstruction, making the AI-generated splats indistinguishable from the original video.
 
-![Visual Parity](./assets/visual_parity.png)
+![Visual Parity](./assets/metrics/visual_parity.png)
 *Left: Ground Truth (Original Video) | Right: AI Reconstruction (Step 14,900)*
 
 ## Overview
@@ -138,10 +138,10 @@ A successful training run for this scene typically achieves a **PSNR of 30+**. B
 | **Gaussian Count** | 328,542 |
 
 ### **Training Performance**
-![PSNR Graph](./assets/psnr.png)
+![PSNR Graph](./assets/metrics/psnr.png)
 *PSNR curve showing stable convergence at ~40.1 dB.*
 
-![Loss Graph](./assets/loss.png)
+![Loss Graph](./assets/metrics/loss.png)
 *Total Loss curve demonstrating successful model optimization.*
 
 ---
@@ -157,6 +157,7 @@ A successful training run for this scene typically achieves a **PSNR of 30+**. B
 ## Project Structure
 ```bash
 ├── assets/                 # Input video and demo for README
+│   └── metrics/            # Training metrics and visual parity results
 ├── docs/
 │   └── 3dgsreport.pdf          # Technical report and analysis
 ├── logs/
