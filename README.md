@@ -49,7 +49,7 @@ For a detailed technical analysis, including the mathematical background of Gaus
 * **@react-three/drei:** Provided high-level abstractions for the `<Splat />` loader and `<OrbitControls />` camera interaction.
 
 ### **Tools and Utilities**
-* **FFmpeg:** The engine behind the scenes—used to extract individual frames from the input video for training.
+* **FFmpeg:** The engine behind the scenes: used to extract individual frames from the input video for training.
 * **Python (Custom Scripts):** Used to bridge the compatibility gap by converting the raw `.ply` point cloud exported from Nerfstudio into the web-optimized `.splat` binary format required for the React viewer.
 
 ---
